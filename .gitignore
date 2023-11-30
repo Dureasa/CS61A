@@ -1,0 +1,10 @@
+# ok-class file 
+.ok_history
+.ok_storage.bak
+.ok_storage.dat
+.ok_history.dir
+*.ok
+ok
+
+# pycache files
+/**/**/__pycache__
