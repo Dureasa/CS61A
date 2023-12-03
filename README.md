@@ -14,15 +14,14 @@ CS 61A primarily uses the Python 3 programming language. Python is a popular lan
 
 Mastery of a particular programming language is a very useful side effect of CS 61A. However, our goal is not to dictate what language you use in your future endeavors. Instead, our hope is that once you have learned the concepts involved in programming, you will find that picking up a new programming language is but a few days' work. In fact, you will be asked to learn at least two other languages, Scheme and SQL, during the course.
 
-## Intro
+## Introduction
 
 This repository contains my solution specified to the 2022-fall version course,  as a recording of my learning progress to CS61A, the first course of CS I took.
 
 ## Links
+[Course Website](https://inst.eecs.berkeley.edu/~cs61a/fa22/)
 
-[Course Website]([CS 61A Fall 2022](https://inst.eecs.berkeley.edu/~cs61a/fa22/))
-
-[Textbook (an adaption of SICP)]([1.1 Getting Started (composingprograms.com)](https://www.composingprograms.com/pages/11-getting-started.html))
+[Textbook (an adaption of SICP)](https://www.composingprograms.com/)
 
 -------------------------------------------------------------------------------------
 
