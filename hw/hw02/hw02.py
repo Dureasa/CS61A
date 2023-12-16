@@ -11,7 +11,7 @@ increment = lambda x: x + 1
 
 HW_SOURCE_FILE = __file__
 
-p
+
 def product(n, term):
     """Return the product of the first n terms in a sequence.
 
@@ -32,6 +32,12 @@ def product(n, term):
     162
     """
     "*** YOUR CODE HERE ***"
+    i = 1
+    result = 1
+    while i <= n:
+        result *= term(i)
+        i += 1
+    return result
 
 
 def accumulate(merger, start, n, term):
@@ -59,6 +65,12 @@ def accumulate(merger, start, n, term):
     16
     """
     "*** YOUR CODE HERE ***"
+    result = start
+    i = 1
+    while i <= n:
+        result = merger(result, term(i))
+        i += 1
+    return result
 
 
 def summation_using_accumulate(n, term):
@@ -75,8 +87,7 @@ def summation_using_accumulate(n, term):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(summation_using_accumulate)).body[0].body]
     ['Expr', 'Return']
     """
-    "*** YOUR CODE HERE ***"
-
+    return accumulate(add, term(0), n, term)
 
 def product_using_accumulate(n, term):
     """Returns the product: term(1) * ... * term(n), using accumulate.
@@ -92,4 +103,4 @@ def product_using_accumulate(n, term):
     >>> [type(x).__name__ for x in ast.parse(inspect.getsource(product_using_accumulate)).body[0].body]
     ['Expr', 'Return']
     """
-    "*** YOUR CODE HERE ***"
+    return accumulate(mul, 1, n, term)
